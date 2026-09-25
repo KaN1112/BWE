@@ -30,6 +30,7 @@
         <a href="#features">Features</a>
         <a href="#commands">Commands</a>
         <a href="#install">Install</a>
+        <a href="#safety">Safety</a>
         <a href="#roadmap">Roadmap</a>
         <a class="nav-download" href="./downloads/BedrockWorldEdit-0.3.0.mcpack" download>Download</a>
       </nav>
@@ -178,7 +179,74 @@
       </div>
     </section>
 
-    <section class="section section-surface" id="roadmap">
+    <section class="section section-surface" id="safety">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">BEFORE YOU INSTALL</p>
+          <h2>配布案内と導入前の注意</h2>
+          <p>Bedrock WorldEditを安全に利用するため、導入前に以下をご確認ください。</p>
+        </div>
+
+        <div class="distribution-copy reveal">
+          <div>
+            <p class="eyebrow">ABOUT BWE</p>
+            <h3>Bedrock Editionの建築作業を支援するBehavior Pack</h3>
+          </div>
+          <p>Bedrock WorldEdit（BWE）は、Minecraft Bedrock Edition Windows版向けの範囲編集・建築支援Behavior Packです。範囲の一括設置、ブロック置換、コピー＆ペースト、Undo／Redo、専用Wandによる範囲選択に対応しています。</p>
+        </div>
+
+        <div class="safety-grid reveal">
+          <article class="safety-item safety-primary">
+            <p class="safety-label">最重要</p>
+            <h3>最初にワールドをバックアップ</h3>
+            <p>範囲編集は大量のブロックを変更します。導入前と大規模編集前に、対象ワールドのコピーを作成してください。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">対応環境</p>
+            <h3>Windows版Bedrock専用</h3>
+            <p>Java Editionには対応していません。スマートフォン、家庭用ゲーム機、Dedicated Serverでの動作は保証対象外です。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">ワールド設定</p>
+            <h3>チートを有効にする</h3>
+            <p>カスタムコマンドにはチートの有効化が必要です。設定変更により、そのワールドでは実績を解除できなくなる可能性があります。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">マルチプレイ</p>
+            <h3>メンバー権限を慎重に管理</h3>
+            <p>メンバー権限以上のプレイヤーはBWEを使用できます。信頼できない参加者にはビジター権限を設定してください。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">処理上限</p>
+            <h3>1回50,000ブロックまで</h3>
+            <p>処理は1 tickあたり500ブロックに分割されます。編集範囲と貼り付け先のチャンクを読み込んでから実行してください。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">コピー対象</p>
+            <h3>保存されないデータがあります</h3>
+            <p>チェストの中身、看板文字、エンティティ、プレイヤー、インベントリなど、BlockPermutation外のデータはコピーされません。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">履歴</p>
+            <h3>ワールド終了時に消去</h3>
+            <p>クリップボードとUndo／Redo履歴はメモリ上にあります。ワールドを閉じると消去され、履歴はプレイヤーごとに最大15件です。</p>
+          </article>
+          <article class="safety-item">
+            <p class="safety-label">カスタムブロック</p>
+            <h3>登録済みPermutationのみ</h3>
+            <p>対象ワールドに登録され、有効なBlockPermutationとして解決できるブロックを利用できます。すべての外部アドオンとの互換性を保証するものではありません。</p>
+          </article>
+        </div>
+
+        <aside class="disclaimer reveal">
+          <h3>免責事項</h3>
+          <p>Bedrock WorldEditは非公式のコミュニティプロジェクトです。Mojang StudiosおよびMicrosoftとは提携しておらず、承認を受けた製品ではありません。本アドオンの利用によって発生したワールドデータの破損、建築物の消失、互換性問題などについて、作者は責任を負いません。利用前に必ずワールドのバックアップを作成してください。</p>
+          <p class="disclaimer-license">MIT Licenseで公開しています。改変・再配布する場合は、同梱されているLICENSEと著作権表示を保持し、改変版であることを明記してください。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
       <div class="container roadmap-grid reveal">
         <div><p class="eyebrow">ROADMAP</p><h2>現在地と、これから。</h2><p>基本的な範囲編集を土台に、Bedrock Edition向けの本格的な建築支援ツールへ拡張していきます。</p></div>
         <div class="roadmap-list">
