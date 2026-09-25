@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bedrock WorldEdit (BWE) | Minecraft Bedrock Edition World Editor</title>
+  <meta name="description" content="Minecraft Bedrock Edition Windows版向けのコマンドベース範囲編集Behavior Pack「Bedrock WorldEdit (BWE)」公式配布サイト。">
+  <meta name="theme-color" content="#111411">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bedrock WorldEdit (BWE)">
+  <meta property="og:description" content="Minecraft Bedrock Edition Windows版向けのコマンドベース範囲編集Behavior Pack。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bedrock WorldEdit (BWE)">
+  <meta name="twitter:description" content="Minecraft Bedrock Edition Windows版向けの範囲編集Behavior Pack。">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Bedrock WorldEdit トップ">
+        <span class="brand-mark" aria-hidden="true">BWE</span>
+        <span>Bedrock WorldEdit</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション" data-nav>
+        <a href="#features">Features</a>
+        <a href="#commands">Commands</a>
+        <a href="#install">Install</a>
+        <a href="#roadmap">Roadmap</a>
+        <a class="nav-download" href="./downloads/BedrockWorldEdit-0.3.0.mcpack" download>Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">BEDROCK EDITION / WINDOWS</p>
+          <h1>Minecraft Bedrockの建築編集を、<br>もっと速く。</h1>
+          <p class="hero-lead">Bedrock WorldEditは、Minecraft Bedrock Edition向けに独自開発された、コマンドベースの範囲編集Behavior Packです。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./downloads/BedrockWorldEdit-0.3.0.mcpack" download>v0.3.0 をダウンロード</a>
+            <a class="button button-secondary" href="#quick-start">使い方を見る</a>
+          </div>
+          <p class="compatibility">Minecraft Bedrock Edition 1.26.50+ <span aria-hidden="true">・</span> Windows <span aria-hidden="true">・</span> Beta API不要</p>
+        </div>
+
+        <div class="console reveal" aria-label="BWEコマンドの実行例">
+          <div class="console-heading"><span>BWE / SESSION</span><span>READY</span></div>
+          <div class="console-body">
+            <p><span class="prompt">›</span> /bwe:wand</p>
+            <p class="console-result">選択の斧を渡しました。</p>
+            <p><span class="prompt">›</span> 左クリック <span class="comment"># Pos1</span></p>
+            <p class="console-result">第1選択地点を設定しました: 24, 68, -12</p>
+            <p><span class="prompt">›</span> 右クリック <span class="comment"># Pos2</span></p>
+            <p class="console-result">第2選択地点を設定しました: 39, 75, 51</p>
+            <p><span class="prompt">›</span> /bwe:size</p>
+            <p class="console-result">選択範囲: 8,192ブロック</p>
+            <p><span class="prompt">›</span> /bwe:set stone</p>
+            <p class="console-result success">編集が完了しました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FEATURES</p>
+          <h2>必要な編集機能を、ゲーム内から。</h2>
+          <p>選択から履歴管理まで、建築作業の流れをチャットコマンドと専用Wandで完結できます。</p>
+        </div>
+        <div class="feature-grid reveal">
+          <article><span>01</span><h3>範囲編集</h3><p>Pos1 / Pos2で選んだ直方体範囲を、指定ブロックで一括編集します。</p></article>
+          <article><span>02</span><h3>登録済みブロックID</h3><p>固定リストではなく、対象ワールドで利用できる標準・カスタムブロックを解決します。</p></article>
+          <article><span>03</span><h3>コピー &amp; ペースト</h3><p>プレイヤー位置との相対関係を保ったまま建築物を複製。空気の除外にも対応します。</p></article>
+          <article><span>04</span><h3>Undo / Redo</h3><p>編集履歴をプレイヤー単位で管理し、最大15件まで取り消し・やり直しできます。</p></article>
+          <article><span>05</span><h3>選択Wand</h3><p>専用の木の斧で、左クリックを第1地点、右クリックを第2地点に設定します。</p></article>
+          <article><span>06</span><h3>分割処理</h3><p>大規模編集を1 tickあたり500ブロックに分け、ゲームへの負荷を抑えます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="commands">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">COMMANDS</p>
+          <h2>ゲーム内コマンド</h2>
+          <p>コマンドをクリックするとクリップボードへコピーできます。</p>
+        </div>
+        <div class="command-toolbar reveal">
+          <label for="command-search">コマンドを検索</label>
+          <input id="command-search" type="search" placeholder="例: paste、選択、履歴" autocomplete="off" data-command-search>
+          <p class="search-count" aria-live="polite" data-search-count>17件のコマンド</p>
+        </div>
+        <div class="command-table-wrap reveal">
+          <table class="command-table">
+            <thead><tr><th scope="col">Command</th><th scope="col">Description</th></tr></thead>
+            <tbody data-command-list>
+              <tr><td><button class="command-copy" data-command="/bwe:help">/bwe:help</button></td><td>簡易ヘルプを表示</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:wand">/bwe:wand</button></td><td>選択専用の木の斧を取得</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:pos1">/bwe:pos1</button></td><td>現在位置を第1地点に設定</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:pos2">/bwe:pos2</button></td><td>現在位置を第2地点に設定</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:hpos1">/bwe:hpos1</button></td><td>視線先を第1地点に設定</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:hpos2">/bwe:hpos2</button></td><td>視線先を第2地点に設定</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:size">/bwe:size</button></td><td>選択範囲のブロック数を確認</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:desel">/bwe:desel</button></td><td>選択を解除</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:set stone">/bwe:set &lt;block&gt;</button></td><td>指定ブロックで選択範囲を埋める</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:replace dirt stone">/bwe:replace &lt;from&gt; &lt;to&gt;</button></td><td>選択範囲内の指定ブロックを置換</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:copy">/bwe:copy</button></td><td>選択範囲をコピー</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:paste">/bwe:paste [air]</button></td><td>現在位置を基準に貼り付け。falseで空気を除外</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:undo">/bwe:undo</button></td><td>直前の編集を取り消す</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:redo">/bwe:redo</button></td><td>取り消した編集をやり直す</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:history">/bwe:history</button></td><td>Undo / Redoの履歴件数を確認</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:clearhistory">/bwe:clearhistory</button></td><td>自分の履歴を削除</td></tr>
+              <tr><td><button class="command-copy" data-command="/bwe:cancel">/bwe:cancel</button></td><td>実行中のジョブをキャンセル</td></tr>
+            </tbody>
+          </table>
+          <p class="empty-search" hidden data-empty-search>一致するコマンドはありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blocks">
+      <div class="container split-layout reveal">
+        <div>
+          <p class="eyebrow">BLOCK RESOLUTION</p>
+          <h2>ブロックを固定リストで制限しない。</h2>
+          <p>BWEは、対象ワールドに登録されたブロックIDを確認し、BlockPermutationとして解決します。Minecraft標準ブロックに加え、別アドオンのカスタムブロックも、有効なIDとPermutationであれば利用できます。</p>
+          <p class="note">すべての内部ブロックを無条件に利用できるという意味ではありません。Script APIへ登録され、現在のワールドで解決できるブロックが対象です。</p>
+        </div>
+        <div class="code-block" aria-label="ブロック指定例">
+          <button class="code-line command-copy" data-command="/bwe:set stone"><span>/bwe:set stone</span><small>標準ID・省略形</small></button>
+          <button class="code-line command-copy" data-command="/bwe:set minecraft:diamond_block"><span>/bwe:set minecraft:diamond_block</span><small>完全なID</small></button>
+          <button class="code-line command-copy" data-command="/bwe:set example:custom_block"><span>/bwe:set example:custom_block</span><small>カスタムブロック</small></button>
+          <button class="code-line command-copy" data-command='/bwe:set minecraft:oak_stairs["weirdo_direction"=0]'><span>/bwe:set minecraft:oak_stairs["weirdo_direction"=0]</span><small>Block State</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="quick-start">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">QUICK START</p><h2>5ステップで最初の編集</h2></div>
+        <ol class="steps reveal">
+          <li><span>01</span><div><h3>Wandを受け取る</h3><button class="inline-code command-copy" data-command="/bwe:wand">/bwe:wand</button></div></li>
+          <li><span>02</span><div><h3>2点を選ぶ</h3><p>専用Wandの左クリックでPos1、右クリックでPos2を指定します。</p></div></li>
+          <li><span>03</span><div><h3>範囲を確認</h3><button class="inline-code command-copy" data-command="/bwe:size">/bwe:size</button></div></li>
+          <li><span>04</span><div><h3>ブロックを設置</h3><button class="inline-code command-copy" data-command="/bwe:set stone">/bwe:set stone</button></div></li>
+          <li><span>05</span><div><h3>必要なら元に戻す</h3><button class="inline-code command-copy" data-command="/bwe:undo">/bwe:undo</button></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <div class="container">
+        <div class="download-panel reveal">
+          <div>
+            <p class="eyebrow">DOWNLOAD</p>
+            <h2>Bedrock WorldEdit</h2>
+            <dl class="release-meta"><div><dt>Version</dt><dd>0.3.0</dd></div><div><dt>Minecraft</dt><dd>Bedrock 1.26.50+</dd></div><div><dt>Platform</dt><dd>Windows</dd></div><div><dt>File</dt><dd>12.4 KB</dd></div></dl>
+          </div>
+          <a class="button button-primary button-large" href="./downloads/BedrockWorldEdit-0.3.0.mcpack" download>Download .mcpack</a>
+        </div>
+        <div class="install-grid reveal">
+          <div><span>1</span><p><strong>ダウンロード</strong><br>上のボタンからmcpackを保存します。</p></div>
+          <div><span>2</span><p><strong>ファイルを開く</strong><br>mcpackをダブルクリックします。</p></div>
+          <div><span>3</span><p><strong>インポート</strong><br>Minecraftで成功表示を確認します。</p></div>
+          <div><span>4</span><p><strong>パックを有効化</strong><br>対象ワールド → ビヘイビアーパック → マイパックからBWEを選びます。</p></div>
+          <div><span>5</span><p><strong>ワールド設定</strong><br>「チートの実行」を有効にします。</p></div>
+          <div><span>6</span><p><strong>開始</strong><br>ワールドで <code>/bwe:help</code> を実行します。</p></div>
+        </div>
+        <aside class="warning reveal"><strong>バックアップを推奨します。</strong><p>大規模な編集を行う前に、対象ワールドのコピーを作成してください。</p></aside>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="roadmap">
+      <div class="container roadmap-grid reveal">
+        <div><p class="eyebrow">ROADMAP</p><h2>現在地と、これから。</h2><p>基本的な範囲編集を土台に、Bedrock Edition向けの本格的な建築支援ツールへ拡張していきます。</p></div>
+        <div class="roadmap-list">
+          <div><h3><span class="status status-done">実装済み</span></h3><ul><li>Basic Selection</li><li>Set / Replace</li><li>Copy / Paste</li><li>Undo / Redo</li><li>Selection Wand</li><li>Block States</li></ul></div>
+          <div><h3><span class="status status-planned">予定</span></h3><ul><li>Cut</li><li>Rotate / Flip</li><li>Shapes</li><li>Schematic</li><li>Brush</li><li>Mask / Pattern</li><li>Terrain Editing</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="limitations">
+      <div class="container two-column reveal">
+        <div><p class="eyebrow">LIMITATIONS</p><h2>現在の制限</h2><p>一般配布にあたり、v0.3.0で扱えないデータや運用上の制約を明記します。</p></div>
+        <ul class="limitation-list">
+          <li>チェストの中身、看板文字などBlockPermutation外のデータはコピーしません。</li>
+          <li>エンティティ、プレイヤー、インベントリはコピーしません。</li>
+          <li>クリップボードとUndo履歴はメモリ上にあり、ワールド終了時に消えます。</li>
+          <li>未ロードチャンクまたはワールド範囲外を検出するとジョブを停止します。</li>
+          <li>異なる利用者による重複範囲の同時編集は現在ロックしません。</li>
+          <li>1回の編集・コピーは50,000ブロック、Undo履歴はプレイヤーごとに15件までです。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="faq">
+      <div class="container narrow reveal">
+        <div class="section-heading"><p class="eyebrow">FAQ</p><h2>よくある質問</h2></div>
+        <details><summary>Java版でも使えますか？</summary><p>いいえ。Minecraft Bedrock Edition Windows版向けです。</p></details>
+        <details><summary>Beta APIを有効にする必要がありますか？</summary><p>いいえ。v0.3.0ではBeta API実験は不要です。</p></details>
+        <details><summary>カスタムブロックは利用できますか？</summary><p>対象ワールドに登録され、有効なBlockPermutationとして解決できるブロックIDであれば利用できます。</p></details>
+        <details><summary>Java版WorldEditの //set は使えますか？</summary><p>現在は使用できません。BWEでは <code>/bwe:set</code> 形式を使用します。</p></details>
+        <details><summary>Undoできますか？</summary><p>可能です。プレイヤーごとに最大15件の履歴を保持します。</p></details>
+        <details><summary>大量のブロックを一度に変更できますか？</summary><p>v0.3.0では1回につき50,000ブロックが上限です。処理は1 tickあたり500ブロックに分割されます。</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">BWE</span><span>Bedrock WorldEdit</span></div><p>KaNが制作した、Minecraft Bedrock Edition向けの非公式コミュニティプロジェクトです。</p></div>
+      <div><p><strong>Version 0.3.0</strong><br>MIT License</p><p class="legal">Mojang StudiosまたはMicrosoftによる承認・提携を受けたプロジェクトではありません。MinecraftはMojang Studiosの商標です。</p></div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite" data-toast>コピーしました</div>
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>
