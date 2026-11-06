@@ -1,21 +1,12 @@
-MIT License
+MITライセンス
 
 Copyright (c) 2026 KaN
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+本ソフトウェアおよび関連文書ファイル（以下「本ソフトウェア」）の複製を入手するすべての者に対し、無償で、本ソフトウェアを無制限に取り扱うことを許可する。
+これには、本ソフトウェアの使用、複製、変更、結合、公開、頒布、サブライセンス、および／または販売の権利が含まれるほか、本ソフトウェアの提供を受けた者が同様の行為を行うことを許可することも含まれる。
+ただし、以下の条件に従うものとする。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+上記の著作権表示および本許諾表示を、本ソフトウェアのすべての複製物または重要な部分に含めるものとする。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+本ソフトウェアは「現状のまま」提供されるものとし、明示的か黙示的かを問わず、商品性、特定の目的への適合性、および権利侵害の不存在に関する保証を含む（ただしこれらに限定されない）いかなる種類の保証も伴わない。
+本ソフトウェアの使用またはその他の取り扱いから生じる、あるいはそれに関連するいかなる請求、損害、その他の法的責任についても、契約、不法行為、その他いかなる根拠に基づくかに関わらず、著作者または著作権者は一切の責任を負わないものとする。
